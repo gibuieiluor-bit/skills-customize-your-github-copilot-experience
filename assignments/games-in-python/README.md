@@ -3,33 +3,33 @@
 
 ## 🎯 Objective
 
-Build a classic Hangman game in Python using strings, loops, and user input. This assignment helps students practice random word selection, conditionals, and tracking game state while creating a fun, playable text-based game.
+Build a playable text-based Hangman game in Python. Practice using strings, loops, conditionals, random selection, and user input to manage the game state.
 
 ## 📝 Tasks
 
 ### 🛠️ Build the Game Setup
 
 #### Description
-Set up the core game by choosing a hidden word and showing the player a blank version of it that updates as guesses are made.
+Set up the game by choosing a hidden word and showing the player which letters have been revealed as guesses are made.
 
 #### Requirements
 Completed program should:
 
-- Randomly select a word from a predefined list
-- Display the hidden word as underscores, such as `_ _ _ _`
-- Track which letters have already been guessed
-- Show the current progress after each guess
+- Store a list of possible words and randomly select one at the start of each game
+- Display one underscore for each letter in the hidden word, such as `_ _ _ _`
+- Record the letters the player has guessed
+- Reveal every matching position when the player guesses a letter in the word
+- Display the revealed letters and remaining attempts after each guess
 
 ### 🛠️ Add Gameplay and End Conditions
 
 #### Description
-Create the main game loop so the player can guess letters until they either win by solving the word or lose after running out of chances.
+Create the main game loop so the player can guess letters until they solve the word or run out of attempts.
 
 #### Requirements
 Completed program should:
 
-- Accept one letter guess at a time from the player
-- Reveal matching letters in the hidden word
-- Reduce the remaining attempts for incorrect guesses
-- Stop the game when the word is fully guessed or attempts reach zero
-- Display a clear win or lose message at the end
+- Prompt the player for one letter guess at a time
+- Reduce the remaining attempts by one for each incorrect guess
+- End the game when all letters are revealed or no attempts remain
+- Display a clear win or loss message and reveal the word when the game ends
